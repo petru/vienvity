@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -26,7 +26,7 @@
 	        <div class="post" id="post-<?php the_ID(); ?>">
             <h2 class="title"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 			      <div class="entry">
-              <?php the_content(__('Continue reading &#187;')); ?>
+              <?php the_content(__('Continue reading &#187;','vnv')); ?>
               <?php wp_link_pages(); ?>
               <?php $sub_pages = wp_list_pages( 'sort_column=menu_order&depth=1&title_li=&echo=0&child_of=' . $id );?>
               <?php if ($sub_pages <> "" ){?>
@@ -39,7 +39,7 @@
 	        </div>
 			<?php comments_template(); // Get wp-comments.php template ?>
       <?php endwhile; else: ?>
-          <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+          <p><?php _e('Sorry, no posts matched your criteria.','vnv'); ?></p>
       <?php endif; ?>
       <!--<p style="text-align:center;"><?php posts_nav_link(' - ','&#171; Prev','Next &#187;') ?></p> -->
 	</div>

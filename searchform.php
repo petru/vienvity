@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -19,7 +19,7 @@
     along with vienvity.  If not, see <http://www.gnu.org/licenses/>.
 */
 ?>
-<form method="get" action="<?php bloginfo('home'); ?>/" name="search-form" id="search-form" >
+<form method="get" action="<?php echo home_url(); ?>/" name="search-form" id="search-form" >
 	<p>
 		<label for="s"><?php _e('Search','vnv'); ?>:</label>
 		<input type="text" value="<?php the_search_query(); ?>" name="s" id="s" class="input-text" />

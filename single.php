@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -23,13 +23,13 @@
 	<div id="content">
 		<div id="main-content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-			<div class="post" id="post-<?php the_ID(); ?>">
+			<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
 				<span class="date"><?php the_time(__('F jS, Y','vnv')) ?></span>
 				<div class="entry">
 					<?php the_content(__('Read the rest of this article','vnv').' &raquo;'); ?>
 					<?php wp_link_pages(array('before' => '<p><strong>'.__('Pages','vnv').':</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-					<span class="number-of-comments">Part of <?php the_category(', ') ?> / <a href="<?php the_permalink() ?>#comments"><?php comments_number(__('No comments','vnv'), __('One comment','vnv'), __('% comments','vnv'));?></a></span>
+					<span class="number-of-comments">Part of <?php the_category(', ') ?> / <?php the_tags('Tagged with: ',', ',' / '); ?> <a href="<?php the_permalink() ?>#comments"><?php comments_number(__('No comments','vnv'), __('One comment','vnv'), __('% comments','vnv'));?></a></span>
 				</div>
 			</div>
 		<?php comments_template(); ?>

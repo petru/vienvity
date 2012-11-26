@@ -17,7 +17,8 @@
 */
 
 html, body {
-	background: #2F2F2F; }
+	background: #2F2F2F; 
+}
 	
 strong {
 	color: #CCC;
@@ -167,7 +168,16 @@ strong {
 #commentform a:focus {
 	color: #CCC;
 }
-
+.comment-navigation a:link, .comment-navigation a:visited {
+	color: #F90;
+	border: solid #3C3C3C 1px;
+	background: #3C3C3C;
+}
+.comment-navigation a:hover,
+.comment-navigation a:active,
+.comment-navigation a:focus {
+	color: #fff;
+}
 .pagination {
 	color: #F90;
 }

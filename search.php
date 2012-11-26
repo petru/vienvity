@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -23,8 +23,8 @@
 	<div id="content">
 		<div id="main-content">
 	<?php if (have_posts()) : ?>
-		<p class="string"><?php _e('You searched for the following','vnv'); ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
-		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
+		<p class="string"><?php _e('You searched for the following','vnv'); ?>: "<strong><?php echo esc_html($s); ?></strong>"</p>
+		<a href="<?php echo home_url(); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
 		<h2 class="error"><?php _e('Search results','vnv'); ?></h2>
 		<?php while (have_posts()) : the_post(); ?>
 		<div class="post"  id="post-<?php the_ID(); ?>">
@@ -41,8 +41,8 @@
 			<div class="next"><?php previous_posts_link(__('More recent articles','vnv').' &raquo;') ?></div>
 		</div>
 	<?php else : ?>
-		<p class="string"><?php _e('You searched for the following','vnv') ?>: "<strong><?php echo wp_specialchars($s); ?></strong>"</p>
-		<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
+		<p class="string"><?php _e('You searched for the following','vnv') ?>: "<strong><?php echo esc_html($s); ?></strong>"</p>
+		<a href="<?php echo home_url(); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
 		<h2 class="error"><?php _e('We didn\'t find anything. Try a different search or look in the categories below.','vnv'); ?></h2>
 	<?php endif; ?>
 		</div>

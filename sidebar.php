@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -33,7 +33,7 @@
 	<div id="sb-2">
 		<ul>
 			<?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar(2) ) : else : ?>
-			<li><?php include (TEMPLATEPATH . '/searchform.php'); ?></li>
+			<li><?php get_search_form(); ?></li>
 			<li class="rss"><a href="<?php bloginfo('rss2_url'); ?>"><?php _e('RSS Feed of the articles','vnv'); ?></a></li>
 			<li class="rss"><a href="<?php bloginfo('comments_rss2_url'); ?>"><?php _e('RSS Feed of the comments','vnv'); ?></a></li>
 		<?php endif; ?>

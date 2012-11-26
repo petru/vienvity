@@ -78,7 +78,7 @@ a.back {
 }
 
 .date {
-	font-size: .95em;
+	/* font-size: 0.95em; */
 }
 
 .post .number-of-comments a {
@@ -98,11 +98,11 @@ a.back {
 }
 
 .comment cite a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .pagination a {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 #sidebar a {

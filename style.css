@@ -4,6 +4,8 @@ Description: A minimalistic WordPress theme with a sharp focus on content. Based
 Version: 1.0
 Author: Petru Madar
 Author URI: http://www.vienvity.net/
+License: GNU General Public License
+License URI: license.txt
 Tags: black, white, dark, light, one-column, fixed-width 
 */
 
@@ -12,7 +14,7 @@ Tags: black, white, dark, light, one-column, fixed-width
 @import "css/images.css";
 @import "css/type-arial.css";
 /* @import "css/type-book.css"; */
-@import "css/colors.css";
+/*@import "css/colors.css";*/
 @import "css/forms.css";
 @import "css/white.css"; 
 /*@import "css/indentation.css";  */

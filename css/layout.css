@@ -5,7 +5,27 @@
 	max-width: 46.15em;
 	min-width: 700px;
 }
-
+/* begin weird gallery stuff */
+.gallery .gallery-item {
+	float: left;
+	margin-top: 0;
+	text-align: center;
+	width: 33.333%;
+}
+.gallery .gallery-caption {
+	font-size: 12px;
+	margin: 0 0 0.7em 0;
+}
+.gallery dl {
+	margin: 0;
+}
+.gallery img {
+	padding: 4px;
+}
+.gallery br+br {
+	display: none;
+}
+/* end weird gallery stuff */
 #header {
 	margin: 0 0 -1em 0;
 	padding: 5em 0 0 0;
@@ -30,7 +50,8 @@ pre {
 	padding: 2.7em;
 	position: relative;
 }
-
+.sticky {
+}
 .post img,
 .post object,
 .post embed {
@@ -101,18 +122,60 @@ pre {
 	position: relative;
 	overflow: auto;
 }
-
+.reply {
+	font-size: 12px;
+}
+ul.children, ul.children > li {
+	padding-bottom: 0px;
+}
+li.comment {
+	list-style-type: none;
+}
 .comment .date {
 	bottom: 1em;
 	position: absolute;
 	right: 1em;
 }
-
+img.avatar {
+    float:  left;
+    border:  1px solid #ccc;
+    padding: 5px;
+    margin-right:  5px;
+}
+.comment-meta, .commentmetadata {
+    font-size: 12px;
+}
 #commentform {
 	margin: 2.3em 0 4.6em 0;
 	padding: 2.7em;
 }
-
+.comment-navigation {
+	margin: 20px auto 20px auto;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+.comment-navigation a {
+	text-decoration: none;
+	font-weight: normal;
+}
+.comment-navigation a:hover {
+	font-weight: normal;
+	text-decoration: none;
+}
+.comment-navigation a:link {
+	padding: .2em .4em;
+	text-decoration: none;
+}
+.comment-navigation .page-numbers {
+	font-weight: normal;
+	padding: 3px 6px 3px 6px;
+}	
+.comment-navigation .current {
+	padding:3px 6px 3px 6px;
+	font-weight: bold;
+}
 .pagination {
 	margin: -2.6em 0 4.6em 0;
 }

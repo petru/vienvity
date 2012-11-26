@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -23,7 +23,7 @@
 	<div id="content">
 		<div id="main-content">
 			<p class="string"><?php _e('The page you are looking for doesn\'t exist. Sorry.','vnv'); ?></p>
-			<a href="<?php echo get_option('home'); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
+			<a href="<?php echo home_url(); ?>/" class="back"><?php _e('Back home','vnv'); ?></a>
 			<h2 class="error"><?php _e('Try a different search or look in the categories below.','vnv'); ?></h2>
 		</div><!-- close:main-content -->
 		<?php get_sidebar(); ?>

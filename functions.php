@@ -1,8 +1,8 @@
 <?php
 /*
 	vienvity - a minimalistic WordPress theme
-	Copyright (C) 2007-2010 Javier Cañada, Rubén Lozano and Mark MacKay
-	Copyright (C) 2010-2011 Petru Madar <petru@vienvity.net>
+	Copyright (C) 2007-2010 Javier Canada, Ruben Lozano and Mark MacKay
+	Copyright (C) 2010-2012 Petru Madar <petru@vienvity.net>
     This file is part of vienvity.
 
     vienvity is free software: you can redistribute it and/or modify
@@ -20,7 +20,7 @@
 */
 ?>
 <?php 
-	if ( function_exists('register_sidebar') ) {register_sidebar();register_sidebar();} 
+	if ( function_exists('register_sidebar') ) { register_sidebar(); register_sidebar(); } 
 	function author_highlight() {
 		global $comment;
 		if ($comment->user_id == get_the_author_meta('ID')) { echo "highlighted"; }

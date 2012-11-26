@@ -1,13 +1,13 @@
 html, body, #wrapper {
 	background: url('../img/grain.png');
 	/* background: #f3f3f3;*/
-	 }
+}
 	
 strong {
 	color: #333;
 }
 #sidebar li, #header h1, #footer, #comments h3 {
-text-shadow: 0px 1px 1px #fff;
+	text-shadow: 0px 1px 1px #fff;
 }
 #wrapper {
 	/* background: #f3f3f3; */
@@ -17,7 +17,6 @@ text-shadow: 0px 1px 1px #fff;
 #header a:link,
 #header a:visited {
 	color: #000;
-	/* text-shadow: 0 1px 2px #fff; */
 }
 
 #header a:hover,
@@ -35,10 +34,10 @@ a:visited.back  {
 	color: #0087C1;
 }
 
-a:hover.back ,
- a:active.back ,
+a:hover.back,
+ a:active.back,
 a:focus.back  {
-	color: #000;
+	color: #222;
 }
 .post {
 	background: #fff;
@@ -72,7 +71,9 @@ a:focus.back  {
 }
 
 #wrapper .post img {
-  border: solid #ddd 1px; background-color: #fff; padding: 5px
+  border: solid #ddd 1px; 
+  background-color: #fff; 
+  padding: 5px
 }
 #wrapper  img.wp-smiley {
 	border: none;
@@ -106,12 +107,6 @@ a:focus.back  {
 .comment a:focus {
 	color: #000;
 }
-/*
-.post img {
-	border: none;
-}
-*/
-
 
 .post .number-of-comments a:link,
 .post .number-of-comments a:visited {
@@ -133,16 +128,25 @@ a:focus.back  {
 	border-top: 1px solid #ddd;
 }
 
-.highlighted {
+.reply a:link, .reply a:visited {
+	color: #0087C1;
+}
+.reply a:hover,
+.reply a:active,
+.reply a:focus {
+	color: #000;
+}
+/*
+.bypostauthor {
 	background: #fefefe;
 	border-top: 1px solid #e6e6e7;
 }
 
-.highlighted a:link,
-.highlighted a:visited {
+.bypostauthor a:link,
+.bypostauthor a:visited {
 	color: #0087C1;
 }
-
+*/
 .comment cite {
 	color: #333;
 }
@@ -150,7 +154,6 @@ a:focus.back  {
 .comment .moderation {
 	color: #333;
 }
-
 #commentform {
 	background: #fff;
 	border: 1px solid #ddd;
@@ -169,7 +172,17 @@ a:focus.back  {
 #commentform a:hover,
 #commentform a:active,
 #commentform a:focus {
-	color: #CCC;
+	color: #222;
+}
+.comment-navigation a:link, .comment-navigation a:visited {
+	color: #0087C1;
+	border: solid #ddd 1px;
+	background: #fff;
+}
+.comment-navigation a:hover,
+.comment-navigation a:active,
+.comment-navigation a:focus {
+	color: #000;
 }
 
 .pagination {
