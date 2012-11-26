@@ -1,0 +1,19 @@
+.post p {
+	text-indent:50px;
+}
+.post p {
+	text-indent:50px;
+}
+.post ul li {
+	margin-left: 50px;
+}
+.post ol li {
+	margin-left: 50px;
+}
+.post h2 {
+	text-align: center;
+}
+.entry h2 {
+	text-align: left;
+	text-indent: 50px;
+}

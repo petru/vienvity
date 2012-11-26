@@ -1,0 +1,36 @@
+/*  
+Theme Name: vienvity
+Description: A minimalistic WordPress theme with a sharp focus on content. Based on the Vostok Theme originally created by Javier Cañada and Rubén Lozano. See www.vostoktheme.com for more.
+Version: 1.0
+Author: Petru Madar
+Author URI: http://www.vienvity.net/
+Tags: black, white, dark, light, one-column, fixed-width 
+*/
+
+@import "css/reset.css";
+@import "css/layout.css";
+@import "css/images.css";
+@import "css/type-arial.css";
+/* @import "css/type-book.css"; */
+@import "css/colors.css";
+@import "css/forms.css";
+@import "css/white.css"; 
+/*@import "css/indentation.css";  */
+/*@import "css/white-dark.css"; */
+/*
+Clearing 
+FloatsMore info: http://www.positioniseverything.net/easyclearing.html*/
+.clearfix:after {
+    content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix {
+	display: inline-block;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
